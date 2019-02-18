@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block css %}
+    <link rel="stylesheet" href="{{url_for('static', filename='app.css')}}"
+{% endblock %}
+
+{% block main %}
+
+<div class="border">
+	
+	<section class="background">
+		<br>
+		<div class="text-center">
+			<img class="img-responsive col-md-offset-3" src="{{url_for('static', filename='shenelle.jpg')}}">
+		</div>
+		<h1 class="text-center">Shenelle McCarthy</h1>
+		<p class="text-center">@sheniboo1</p>
+		<address class="text-center"> Kingston, Jamaica</address>
+		<p class="text-center">{{date}}</p>
+	</section>
+	
+	<section>
+		<p style="padding: 25px;" class="lead col-md-offet-3"> I am an aspiring Interaction Designer. I love web development and I practice every day. Contact me if you need help with any web dev projects.</p>
+		<br>
+		<br>
+		<div class="margin1">
+		</div>
+		<div class="col-md-3">
+			<h1>23</h1>
+			<h3>Post</h3>
+		</div>
+		<div class="col-md-3">
+			<h1>100</h1>
+			<h3>Following</h3>
+		</div>
+		<div class="col-md-3">
+			<h1>500</h1>
+			<h3> Followers</h3>
+		</div>
+	<br>
+	<br>
+	
+	<div class="margin1">
+	</div>
+	<a class="follow-button" href="#">Follow</a>
+	</section>
+	
+</div>
+
+{% endblock %}
+

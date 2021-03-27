@@ -27,8 +27,8 @@ def about():
     
 def format_date_joined():
     today = datetime.datetime.now()
-    date_joined = datetime.date(2019,2,9)
-    return "Joined" + date_joined.strftime("%B","%Y")
+    date_joined = datetime.date(2021,2,14)
+    print ("Joined" + date_joined.strftime("%B,%Y"))
 
 @app.route('/profile')
 def profile():
